@@ -1,0 +1,150 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+input {
+    outline: none;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1,5;
+    margin: 0;
+    font-family: Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    color: #2b3035;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+.collapse{
+    width: 80%;
+    margin: 40px auto;
+}
+
+.btn-collapse{
+    cursor: pointer;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+
+.btn-collapse:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn-collapse:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.5);
+}
+
+.collapse-text{
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    max-height:0px;
+    overflow:hidden;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    border: 0px solid rgba(0,0,0,.125);
+    -webkit-transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.collapse-text-show{ 
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    max-height: 400px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+} 
+
+.btn-collapse-copy-container{
+    display: flex;
+    justify-content: end;
+}
+
+.btn-collapse-copy{
+    color: rgba(0, 0, 0, 0.514);
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.chat-btn{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+.btn-callback-chat{
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    background-color: red;
+    box-shadow: 1px 5px 5px #979da3;
+}
+
+.btn-callback-chat:hover{
+    width: 115px;
+    height: 115px;
+    right: 42px;
+    bottom: 42px;
+    cursor: pointer;
+}
+
+.btn-callback-chat-anim{
+    animation-name: button;
+    animation-duration: 100ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button {
+    0% {
+        transform: scale(1) ;
+    }
+    100% {
+        transform: scale(0);
+        
+    }
+}

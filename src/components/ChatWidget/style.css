@@ -1,0 +1,84 @@
+.callback-chat-widget{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px #979da3;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: #fff;
+    padding: 10px;
+    animation-name: chat;
+    animation-duration: 100ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes chat {
+    0% {
+        transform: scale(0) ;
+    }
+    100% {
+        transform: scale(1);
+        
+    }
+}
+
+.chat-close-anim{
+    animation-name: close;
+    animation-duration: 100ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes close {
+    0% {
+        transform: scale(1) ;
+    }
+    100% {
+        transform: scale(0);
+        
+    }
+}
+
+.close-chat{
+    width: 15px;
+    height: 15px;
+    background-image: url("../../images/free-icon-crossed-4219073.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    border: none;
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+}
+
+.chat-title{
+    font: bold 18px sans-serif
+}
+
+.message-text{
+    width: 90%;
+    height: 60%;
+    resize: none;
+    border: 1px solid rgba(82, 74, 74, 0.295);
+    border-radius: 7px;
+    padding: 6px;
+}
+
+.message-text:focus{
+    outline : 1px solid rgba(82, 74, 74, 0.425);
+}
+
+.message-btn{
+    width: 100%;
+    padding: 4px 10px;
+    border: 1px solid rgba(82, 74, 74, 0.295);
+    border-radius: 7px;
+}

@@ -1,0 +1,118 @@
+.liker-box{
+    position: absolute;
+    left: 200px;
+    bottom: 200px;
+}
+
+
+.btn-liker{
+    width: 100px;
+    padding: 8px;
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-liker {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .heart {
+    background-image: url("../../images/heart.png");
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+  }
+  
+
+  /* 0% - центр, 25% - влево, 50% - центр, 75% - вправо, 100% - центр */
+  @keyframes fly-heart1 {
+    0% {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+    25%{
+        transform: translate(-50%, -50px) translateX(-50px);
+    }
+    50% {
+      transform: translate(-50%, -100px);
+    }
+    75%{
+        transform: translate(-50%, -150px) translateX(50px);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -200px);
+    }
+  }
+
+  /* 0% - центр, 25% - центр, 50% - вправо, 75% - влево, 100% - центр */
+  @keyframes fly-heart2 {
+    0% {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+    25%{
+        transform: translate(-50%, -50px);
+    }
+    50% {
+      transform: translate(-50%, -100px) translateX(50px);
+    }
+    75%{
+        transform: translate(-50%, -150px) translateX(-50px);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -200px);
+    }
+  }
+
+  /* 0% - центр, 25% - центр, 50% - влево, 75% - вправо, 100% - центр */
+  @keyframes fly-heart3 {
+    0% {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+    25%{
+        transform: translate(-50%, -50px);
+    }
+    50% {
+      transform: translate(-50%, -100px) translateX(-50px);
+    }
+    75%{
+        transform: translate(-50%, -150px) translateX(50px);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -200px);
+    }
+  }
+
+/* 0% - центр, 25% - вправо, 50% - центр, 75% - влево, 100% - центр */
+@keyframes fly-heart4 {
+    0% {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+    25%{
+        transform: translate(-50%, -50px) translateX(50px);
+    }
+    50% {
+      transform: translate(-50%, -100px);
+    }
+    75%{
+        transform: translate(-50%, -150px) translateX(-50px);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -200px);
+    }
+  }
